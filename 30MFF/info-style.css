@@ -1,3 +1,4 @@
+/* info-style.css */
 body {
     font-family: "Times New Roman", Times, serif; /* Sets the font style */
     margin: 0;
@@ -51,34 +52,33 @@ nav ul li a:hover {
     width: 80%;
     margin: auto;
     padding: 20px;
-    text-align: center;
 }
 
-/* video */
-.video-section {
+/* Sections for different information blocks */
+.section {
     background: rgb(169, 213, 181);
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #263d2a;
 }
 
-.video-section video {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 8px;
+/* Hover effect for sections */
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
-
-/* Hover effect for video */
-.video-section video:hover {
-    transform: scale(1.05);
-}
-
-/* video blurb */
-.blurb {
-    font-size: 16px;
+/* Section Titles  */
+.section h2 {
     color: #263d2a;
-    margin-top: 15px;
+    border-bottom: 2px solid #263d2a;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+/* Icons */
+.section h2::before {
+    content: "🌱 ";
+    font-size: 22px;
 }
 
 footer {
