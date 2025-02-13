@@ -1,0 +1,76 @@
+/* style.css */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #45985b;
+    color: #333;
+}
+
+header {
+    background-color: #263d2a;
+    color: rgb(249, 240, 240);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    font-family: "Times New Roman", Times, serif;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 50px;
+}
+.hero p{
+    font-size: 25px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background: rgb(169, 213, 181);
+    padding: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 15%;
+    text-align:  center;
+}
+.card a{
+    font-size: 30px;
+}
+
+
+.content a{
+    color: #263d2a;
+    text-decoration: none;
+    font-weight: bold;
+}
