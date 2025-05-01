@@ -1,0 +1,123 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfaf6;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #f4e1d2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #d6bfa5;
+  }
+  
+  .logo {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 32px;
+    color: #4c3b2a;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #4c3b2a;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #f09d51;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  nav a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .headshot {
+    width: 150px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .about-text h2, .section h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 28px;
+    color: #5a4632;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .project {
+    background-color: #fff8f0;
+    border: 2px dashed #e3c7aa;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .project h3 {
+    margin-top: 0;
+    font-family: 'Shadows Into Light', cursive;
+    color: #a2674a;
+  }
+  
+  .project .description {
+    display: none;
+    margin: 10px 0;
+    color: #5a4632;
+  }
+  
+  .project a {
+    color: #f27e4c;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4e1d2;
+    border-top: 2px dashed #d6bfa5;
+    font-size: 14px;
+    color: #5a4632;
+  } 
