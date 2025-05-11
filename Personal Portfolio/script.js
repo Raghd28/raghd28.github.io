@@ -22,3 +22,13 @@ function toggleDescription(projectElement) {
     observer.observe(section);
   });
   
+  const hoverSound = new Audio("mouse-click-290204.mp3");
+hoverSound.volume = 0.5; // not too loud
+
+document.querySelectorAll(".project").forEach(card => {
+  card.addEventListener("mouseenter", () => {
+    // Restart from beginning if hovering repeatedly
+    hoverSound.currentTime = 0;
+    hoverSound.play();
+  });
+});

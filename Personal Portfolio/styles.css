@@ -69,6 +69,12 @@ body {
   .section.fade-in {
     opacity: 1;
     transform: translateY(0);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
   }
   
   .headshot {
@@ -210,4 +216,19 @@ body {
     letter-spacing: 0.5px;
     margin-top: 8px;
     transform: skewX(2deg);
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    
+      .name-tag {
+        font-size: 28px;
+      }
+    
+      .project {
+        transform: none;
+      }
+    }
+
   }
